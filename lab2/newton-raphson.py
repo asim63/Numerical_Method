@@ -7,7 +7,7 @@ def g(x): return x * np.cos(x)
 fig, ax = plt.subplots()
 x=np.linspace(-10,10,1500)
 y=f(x)
-ax.plot(x,y,label="f(x)=xsin(x)+cos(x)")
+ax.plot(x,y,label="f(x)=xsin(x) + x + cos(x)")
 
 # the function is continuous in 2 & 3
 a=4.5
