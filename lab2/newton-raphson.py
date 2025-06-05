@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def f(x): return x * np.sin(x) + x  + np.cos(x) 
-def g(x): return x * np.cos(x)
+def g(x): return x * np.cos(x) + 1
 
 fig, ax = plt.subplots()
 x=np.linspace(-10,10,1500)
