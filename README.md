@@ -1,2 +1,2 @@
 # Numerical_Method
-lab of NM
+This repo contains the problems we coded on the lab of Numerical Methods
