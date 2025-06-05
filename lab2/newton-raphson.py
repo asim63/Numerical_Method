@@ -9,7 +9,7 @@ x=np.linspace(-10,10,1500)
 y=f(x)
 ax.plot(x,y,label="f(x)=xsin(x) + x + cos(x)")
 
-# the function is continuous in 2 & 3
+# the function is continuous in 4 & 5
 a=4.5
 b=a-(f(a)/g(a))
 error=0.00001
