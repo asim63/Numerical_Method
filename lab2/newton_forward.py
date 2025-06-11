@@ -1,14 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import math
-
 x_vals = np.array([1, 2, 3, 4, 5])
 y_init = np.array([-9, 1, 35, 105, 223])
 n = len(x_vals)
-
 d = np.zeros((n, n))
 d[:, 0] = y_init  
-
 for i in range(1, n):
     for j in range(n - i):
         d[j][i] = d[j + 1][i - 1] - d[j][i - 1]
@@ -19,19 +16,13 @@ for i in range(n):
     for j in range(n - i):
         print(f"{d[i][j]:.2f}", end="\t")
     print()
-
-
 x = 3.3  
 x0 = x_vals[0]
 h = x_vals[1] - x_vals[0]  
 p = (x - x0) / h
-
 value=d[0][0]
-
 P=1
-
 for i in range(1,n):
     P*=(p-i+1)
     value += (P*d[0][i])/math.factorial(i)
-
 print(f"\nInterpolated value at x = {x} is {value}")
