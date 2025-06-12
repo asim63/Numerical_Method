@@ -18,6 +18,7 @@ while (abs(b-a)>error):
     b=c
 
 print("Real root:",c)
+ax.set_title('Secant (Asim BCT008)')
 ax.set_xlabel('x')
 ax.set_ylabel('f(x)')
 ax.scatter(b,0,color='red',marker='x', label=f"Approx Root={b}")
