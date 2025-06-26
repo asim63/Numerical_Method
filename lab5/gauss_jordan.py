@@ -19,12 +19,12 @@ def gauss_jordan(A, b):
     return AugmentedMatrix[:, -1]
 
 # Example system of equations:
-# 2x - y + z = 2
-# x + 3y + 2z = 12.5
-# x + y + z = 5
+# 3x - 2y + z = 2
+# x + 3y + 2z = 8
+# 2x + y + z = 5
 
-A = np.array([[2, -1, 1], [1, 3, 2], [1, 1, 1]], dtype=float)
-b = np.array([2, 12, 5], dtype=float)
+A = np.array([[3, -2, 1], [1, 3, 2], [2, 1, 1]], dtype=float)
+b = np.array([2, 8, 5], dtype=float)
 
 solution = gauss_jordan(A, b)
 print("Solution:", solution)
